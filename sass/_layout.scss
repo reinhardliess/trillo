@@ -8,7 +8,9 @@
   height: 6.4rem;
   background-color: #fff;
   border-bottom: 1px solid var(--color-grey-light-2);
-  color: var()
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .content {
