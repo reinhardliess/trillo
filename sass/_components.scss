@@ -16,7 +16,7 @@
     outline: none;
     border: none;
     border-radius: 100px;
-    padding: 0.7rem 1.4rem;
+    padding: 0.4rem 1.2rem;
     background-color: var(--color-grey-light-2);
     width: 90%;
     transition: all 0.2s;
@@ -76,8 +76,8 @@
     font-size: 0.8rem;
     background-color: var(--color-primary);
     border-radius: 50%;
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.6rem;
+    height: 1.6rem;
     color: #fff;
     display: flex;
     justify-content: center;
@@ -94,10 +94,11 @@
     border-radius: 50%;
     width: 3.2rem;
     height: 3.2rem;
-    margin-right: 1rem;
+    margin-right: 1.2rem;
   }
 
   &__user-name {
+    font-size: 1.4rem;
   }
 }
 
