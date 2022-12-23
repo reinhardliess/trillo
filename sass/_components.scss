@@ -106,3 +106,66 @@
 
 // == Main Navigation components ==
 
+.side-nav {
+
+  list-style-type: none;
+  margin-top: 3.2rem;
+
+  &__item {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 3px;
+      height: 100%;
+      background-color: var(--color-primary);
+      top: 0;
+      left: 0;
+      transform: scaleY(0);
+      transition: transform 0.2s,
+                  width .4s cubic-bezier(1,0,0,1) 0.2s,
+                  background-color 0.1s;
+      // z-index:
+    }
+
+    &:hover::before,
+    &--active::before {
+      transform: scaleY(1);
+      width: 100%;
+    }
+
+    &:active::before {
+      background-color: var(--color-primary-light);
+    }
+
+  }
+
+  &__link:link,
+  &__link:visited {
+    // creates stacking context for z-index
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    padding: 1.6rem 2.4rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--color-grey-light-3);
+  }
+
+  &__icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-right: 1rem;
+    fill: currentColor;
+
+  }
+}
+
+.sidebar__footer {
+  font-size: 1.2rem;
+  text-align: center;
+  color: var(--color-grey-light-4);
+  padding: 1.6rem 3.2rem;
+}
