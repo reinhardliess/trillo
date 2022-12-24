@@ -1,12 +1,10 @@
 // == Header components ==
-
 .logo {
   height: 3.2rem;
   margin-left: 2rem;
 }
 
 .search {
-
   flex: 0 0 40%;
   display: flex;
   justify-content: center;
@@ -105,7 +103,6 @@
 }
 
 // == Main Navigation components ==
-
 .side-nav {
 
   list-style-type: none;
@@ -163,9 +160,23 @@
   }
 }
 
+// == Footer for main navigation ==
 .sidebar__footer {
   font-size: 1.2rem;
   text-align: center;
   color: var(--color-grey-light-4);
   padding: 1.6rem 3.2rem;
 }
+
+// == Hotel Photo Gallery ==
+.gallery {
+  display: flex;
+
+  &__item {
+  }
+
+  &__photo {
+    width: 100%;
+  }
+}
+
