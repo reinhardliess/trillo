@@ -39,8 +39,8 @@
   }
 
   &__icon {
-    height: 2rem;
-    width: 2rem;
+    height: 1.8rem;
+    width: 1.8rem;
     fill: var(--color-grey-dark-2);
   }
 }
@@ -68,8 +68,8 @@
   }
 
   &__icon {
-    width: 2rem;
-    height: 2rem;
+    width: 1.8rem;
+    height: 1.8rem;
   }
 
   &__notification {
@@ -107,6 +107,7 @@
 
   list-style-type: none;
   margin-top: 3.2rem;
+  font-size: 1.4rem;
 
   &__item {
     position: relative;
@@ -152,8 +153,8 @@
   }
 
   &__icon {
-    width: 2.4rem;
-    height: 2.4rem;
+    width: 1.8rem;
+    height: 1.8rem;
     margin-right: 1rem;
     fill: currentColor;
 
@@ -177,6 +178,84 @@
 
   &__photo {
     width: 100%;
+    vertical-align: bottom;
+  }
+}
+
+// == Hotel Overview ==
+.overview {
+  display: flex;
+  align-items: center;
+
+  &__heading {
+    font-size: 2.4rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1.6rem 2.4rem;
+  }
+
+
+  &__icon-star,
+  &__icon-location {
+    width: 1.6rem;
+    height: 1.6rem;
+    fill: var(--color-primary);
+  }
+
+  &__stars {
+    display: flex;
+    gap: 0.6rem;
+    margin-right: auto;
+  }
+
+  &__location {
+    display: flex;
+    font-size: 1.2rem;
+  }
+
+  &__icon-location {
+    margin-right: 0.8rem;
+  }
+
+
+  &__rating {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-primary);
+    color: var(--color-grey-light-2);
+    margin-left: 2.4rem;
+    padding: 0 1.6rem;
+  }
+
+
+  &__rating-average {
+    font-size: 2.6rem;
+    font-weight: 300;
+    margin-bottom: -0.8rem;
+  }
+
+  &__rating-votes {
+    font-size: 1.2rem;
+  }
+}
+
+.btn-inline {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: var(--color-primary);
+  padding-bottom: 2px;
+  border-bottom: 1px solid currentColor;
+  font-family: inherit;
+  font-size: inherit;
+  transition: all ;
+
+  &:hover {
+    color: var(--color-grey-dark-1);
   }
 }
 
