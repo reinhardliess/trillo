@@ -254,8 +254,68 @@
   font-size: inherit;
   transition: all ;
 
+  span {
+    margin-left: 5px;
+    transition: margin-left 0.2s;
+  }
+
   &:hover {
     color: var(--color-grey-dark-1);
+
+    span {
+      margin-left: 0.8rem;
+    }
+  }
+}
+
+.review {
+
+  padding: 3rem;
+  background-color: #fff;
+
+  &:not(:last-child) {
+    margin-bottom: 3.2rem;
+  }
+
+  &__text {
+    margin-bottom: 2.4rem;
+  }
+
+  &__user-box {
+    display: flex;
+    align-items: center;
+  }
+
+  &__user-photo {
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    margin-right: 1.6rem;
+  }
+
+  &__user-text-box {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+  }
+
+  &__user-name {
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+
+  &__date {
+    font-size: 1rem;
+  }
+
+  &__rating {
+    font-size: 2.4rem;
+    font-weight: 300;
+    color: var(--color-primary);
+  }
+
+}
   }
 }
 

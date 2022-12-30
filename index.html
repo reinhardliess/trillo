@@ -162,24 +162,92 @@
                 architecto voluptate delectus, inventore iure aliquid aliquam.
               </p>
               <!-- cspell:enable -->
+              <!-- li elements must not be wrapped to prevent a Chromium rendering bug
+              adding whitespace in front of the li text
+              -->
               <ul class="description__list-features">
                 <li class="description__feature-item">Close to the beach</li>
                 <li class="description__feature-item">Breakfast included</li>
                 <li class="description__feature-item">Free airport shuttle</li>
+                <!-- prettier-ignore -->
                 <li class="description__feature-item">Free WiFi in all rooms</li>
+                <!-- prettier-ignore -->
                 <li class="description__feature-item">Air conditioning and heating</li>
                 <li class="description__feature-item">Pets allowed</li>
+                <!-- prettier-ignore -->
                 <li class="description__feature-item">We speak most languages</li>
                 <li class="description__feature-item">Perfect for families</li>
               </ul>
-              <div class="recommend">
-                <p class="description__recommend-text">Lucy and 3 other friends recommend this hotel.</p>
+              <div class="description__recommend">
+                <p class="description__recommend-text">
+                  Lucy and 3 other friends recommend this hotel.
+                </p>
                 <div class="description__recommend-image-box">
-                  <img src="./img/user-1.jpg" alt="Customer photo" class="description__recommend-photo">
-                  <img src="./img/user-2.jpg" alt="Customer photo" class="description__recommend-photo">
-                  <img src="./img/user-3.jpg" alt="Customer photo" class="description__recommend-photo">
-                  <img src="./img/user-4.jpg" alt="Customer photo" class="description__recommend-photo">
+                  <img
+                    src="./img/user-3.jpg"
+                    alt="Customer photo"
+                    class="description__recommend-photo"
+                  />
+                  <img
+                    src="./img/user-4.jpg"
+                    alt="Customer photo"
+                    class="description__recommend-photo"
+                  />
+                  <img
+                    src="./img/user-5.jpg"
+                    alt="Customer photo"
+                    class="description__recommend-photo"
+                  />
+                  <img
+                    src="./img/user-6.jpg"
+                    alt="Customer photo"
+                    class="description__recommend-photo"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="user-reviews">
+              <figure class="review">
+                <!-- cspell:disable -->
+                <blockquote class="review__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
+                  doloremque architecto dicta animi, totam, itaque officia ex.
+                </blockquote>
+                <figcaption class="review__user-box">
+                  <img
+                    src="./img/user-1.jpg"
+                    alt="Customer photo"
+                    class="review__user-photo"
+                  />
+                  <div class="review__user-text-box">
+                    <span class="review__user-name">Nick Smith</span>
+                    <span class="review__date">Oct 5th, 2022</span>
                   </div>
+                  <span class="review__rating">7.7</span>
+                </figcaption>
+              </figure>
+              <figure class="review">
+                <blockquote class="review__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
+                  doloremque architecto dicta animi.
+                </blockquote>
+                <!-- cspell:enable -->
+                <figcaption class="review__user-box">
+                  <img
+                    src="./img/user-2.jpg"
+                    alt="Customer photo"
+                    class="review__user-photo"
+                  />
+                  <div class="review__user-text-box">
+                    <span class="review__user-name">Mary Thomas</span>
+                    <span class="review__date">Jul 1st, 2022</span>
+                  </div>
+                  <span class="review__rating">8.9</span>
+                </figcaption>
+              </figure>
+              <button class="btn-inline">Show all<span>&rarr;</span></button>
+            </div>
+          </div>
               </div>
             </div>
           </div>
