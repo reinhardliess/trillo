@@ -1,5 +1,15 @@
 // == Base defaults ==
 
+// SCSS variables
+
+$bq-largest: 75em;         // 1200px
+$bq-large: 68.75em;        // 1100px
+$bq-medium: 62.5em;        // 1000px
+$bq-smaller: 56.25em;      // 900px
+$bq-small: 43.75em;        // 700px
+$bq-very-small: 33.125em;  // 530px
+$bq-smallest: 28.125em;    // 450px
+
 *,
 *::before,
 *::after {
@@ -27,6 +37,15 @@
 
 html {
   font-size: 62.5%;
+
+  @media only screen and (max-width: $bq-large) {
+    font-size: 56.25%;
+  }
+
+  @media only screen and (max-width: $bq-medium) {
+    font-size: 50%;
+  }
+
 }
 
 body {

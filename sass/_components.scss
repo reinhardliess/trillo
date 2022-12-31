@@ -10,6 +10,13 @@
   justify-content: center;
   align-items: center;
 
+  @media only screen and (max-width: $bq-smallest) {
+    flex: 0 0 100%;
+    background-color: var(--color-grey-light-2);
+    order: 1;
+  }
+
+
   &__input {
     font-family: inherit;
     font-size: 1.4rem;
@@ -109,8 +116,26 @@
   margin-top: 3.2rem;
   font-size: 1.4rem;
 
+  @media only screen and (max-width: $bq-smaller) {
+    display: flex;
+    margin-top: 0;
+  }
+
+  @media only screen and (max-width: $bq-smallest) {
+    font-size: 1.2rem;
+  }
+
+
+
   &__item {
     position: relative;
+
+    @media only screen and (max-width: $bq-smaller) {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+
 
     &::before {
       position: absolute;
@@ -150,13 +175,25 @@
     text-decoration: none;
     text-transform: uppercase;
     color: var(--color-grey-light-3);
+
+    @media only screen and (max-width: $bq-very-small) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
   }
 
   &__icon {
     width: 1.8rem;
     height: 1.8rem;
-    margin-right: 1rem;
+    margin-right: 0.7rem;
     fill: currentColor;
+
+    @media only screen and (max-width: $bq-smallest) {
+      display: none;
+    }
+
 
   }
 }
@@ -167,6 +204,11 @@
   text-align: center;
   color: var(--color-grey-light-4);
   padding: 1.6rem 3.2rem;
+
+  @media only screen and (max-width: $bq-smaller) {
+    display: none;
+  }
+
 }
 
 // == Hotel Photo Gallery ==
@@ -193,6 +235,12 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     padding: 1.6rem 2.4rem;
+
+    @media only screen and (max-width: $bq-very-small) {
+      font-size: 2rem;
+      padding: 1.2rem 2rem;
+    }
+
   }
 
 
@@ -207,6 +255,11 @@
     display: flex;
     gap: 0.6rem;
     margin-right: auto;
+
+    @media only screen and (max-width: $bq-large) {
+      gap: 0rem;
+    }
+
   }
 
   &__location {
@@ -216,6 +269,11 @@
 
   &__icon-location {
     margin-right: 0.8rem;
+
+    @media only screen and (max-width: $bq-very-small) {
+      display: none;
+    }
+
   }
 
 
@@ -236,10 +294,34 @@
     font-size: 2.6rem;
     font-weight: 300;
     margin-bottom: -0.8rem;
+
+    @media only screen and (max-width: $bq-very-small) {
+      font-size: 2rem;
+    }
+
+    @media only screen and (max-width: $bq-smallest) {
+      margin-bottom: 0;
+    }
+
+
   }
 
   &__rating-votes {
     font-size: 1.2rem;
+
+    @media only screen and (max-width: $bq-smaller) {
+      font-size: 1.3rem;
+    }
+
+    @media only screen and (max-width: $bq-very-small) {
+      font-size: 1rem;
+    }
+
+    @media only screen and (max-width: $bq-smallest) {
+      display: none;
+    }
+
+
   }
 }
 
@@ -272,6 +354,7 @@
 
   padding: 3rem;
   background-color: #fff;
+  width: 100%;
 
   &:not(:last-child) {
     margin-bottom: 3.2rem;
